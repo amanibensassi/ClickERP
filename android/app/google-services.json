@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "487876259178",
+    "project_id": "click-erp-2a92f",
+    "storage_bucket": "click-erp-2a92f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487876259178:android:c4e47b1391d82fe0c48913",
+        "android_client_info": {
+          "package_name": "com.example.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487876259178-o7sjfpbe2vtp5e8reuq70kpd7k2e8g4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxpwYR7SnLQJGjjBLVEfDPre0KER-NuIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487876259178-o7sjfpbe2vtp5e8reuq70kpd7k2e8g4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
