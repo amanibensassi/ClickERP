@@ -175,7 +175,6 @@ class CalendrierController extends GetxController {
     taskList = [];
     meetList = [];
     List<String> list = [];
-
     taskList = await fetchTasksID();
     meetList = await fetchMeets();
     if (taskList.first.toString() != {"1": "1"}.toString() &&

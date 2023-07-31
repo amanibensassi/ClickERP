@@ -7,10 +7,8 @@ Future<List<Map<String, dynamic>>> fNotificationTR() async {
   List<Map<String, dynamic>> meetstab = [
     {"1": "1"}
   ];
-  // var url =
-  //     'http://erpdev.pingholding.com/wp-json/custom-api-route/getNotificationTache/?id_user=$iduser';
   var url =
-      'http://erp.pingholding.com/wp-json/custom-api-route/getNotificationTache/?id_user=$iduser';
+      'http://erpdev.pingholding.com/wp-json/custom-api-route/getNotificationTache/?id_user=$iduser';
   try {
     var response = await http.post(Uri.parse(url));
     if (response.statusCode == 200) {
@@ -106,10 +104,8 @@ Future<List<Map<String, dynamic>>> fNotificationReunion() async {
 }
 
 Future<String> fUpdateNotification(String value) async {
-  // var url =
-  //     'http://erpdev.pingholding.com/wp-json/custom-api-route/updateNotification/?id_notification=$value';
   var url =
-      'http://erp.pingholding.com/wp-json/custom-api-route/updateNotification/?id_notification=$value';
+      'http://erpdev.pingholding.com/wp-json/custom-api-route/updateNotification/?id_notification=$value';
   try {
     var response = await http.post(Uri.parse(url));
     if (response.statusCode == 200) {

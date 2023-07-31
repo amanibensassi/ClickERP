@@ -7,8 +7,6 @@ Future<List<Map<String, dynamic>>> fTaskOftheDay(String date) async {
   List<Map<String, dynamic>> taskstab = [
     {"1": "1"}
   ];
-  // var url =
-  //     'http://erpdev.pingholding.com/wp-json/custom-api-route/getTacheDujourJSON/?id_user=$iduser&date_jour=$date';
   var url =
       'http://erpdev.pingholding.com/wp-json/custom-api-route/getTacheDujourJSON/?id_user=$iduser&date_jour=$date';
   try {
@@ -59,10 +57,8 @@ Future<List<Map<String, dynamic>>> fMeetOftheDay(String date) async {
   List<Map<String, dynamic>> meetstab = [
     {"1": "1"}
   ];
-  // var url =
-  //     'http://erpdev.pingholding.com/wp-json/custom-api-route/getReunionDujourJSON/?id_user=$iduser&date_jour=$date';
   var url =
-      'http://erp.pingholding.com/wp-json/custom-api-route/getReunionDujourJSON/?id_user=$iduser&date_jour=$date';
+      'http://erpdev.pingholding.com/wp-json/custom-api-route/getReunionDujourJSON/?id_user=$iduser&date_jour=$date';
   try {
     var response = await http.post(Uri.parse(url));
     if (response.statusCode == 200) {

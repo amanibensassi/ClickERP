@@ -159,7 +159,7 @@ class AuthentificationController extends GetxController {
         fSendToFirebase();
         FirebaseApi().tokeninitialize();
         MinuteTimer().startTimer();
-        // MinuteTimer().secondtimer();
+        MinuteTimer().secondtimer();
         TaskController().fgetAcceuil();
       }
     }

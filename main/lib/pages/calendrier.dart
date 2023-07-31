@@ -44,7 +44,6 @@ class _PageCalendrierState extends State<PageCalendrier> {
   void _loadTasks(DateTime? selectedDay) async {
     selectedItem = selectedDay?.toString().split(' ')[0] ?? '';
     todayList = await CalendrierController().fsortMycalender(selectedItem);
-    print(todayList.length);
     setState(() {
       tableLength = todayList.length;
     });
@@ -152,18 +151,19 @@ class _PageCalendrierState extends State<PageCalendrier> {
                 holidayPredicate: (day) {
                   return fHoliday(day, day.weekday);
                 },
-                calendarStyle: const CalendarStyle(
-                  selectedDecoration: BoxDecoration(
+                calendarStyle: CalendarStyle(
+                  selectedDecoration: const BoxDecoration(
                     color: kPrimaryColor,
                     shape: BoxShape.circle,
                   ),
-                  selectedTextStyle: TextStyle(color: Colors.white),
-                  todayDecoration: BoxDecoration(
+                  selectedTextStyle: const TextStyle(color: Colors.white),
+                  todayDecoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: kSplashColor,
                   ),
                   weekendDecoration: BoxDecoration(
                     shape: BoxShape.rectangle,
+                    borderRadius: BorderRadius.circular(25),
                   ),
                 ),
                 headerStyle: HeaderStyle(

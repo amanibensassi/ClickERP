@@ -24,7 +24,7 @@ Future<dynamic> getFromSession(String key) async {
 Future<List<String>> fetchData(String mail, String pwd) async {
   // print('this mail : $mail and password : $pwd');
   var url =
-      'http://erp.pingholding.com/wp-json/custom-api-route/authentication/?email=$mail&password=$pwd';
+      'http://erpdev.pingholding.com/wp-json/custom-api-route/authentication/?email=$mail&password=$pwd';
 
   String name = '';
   try {
@@ -41,7 +41,19 @@ Future<List<String>> fetchData(String mail, String pwd) async {
       } else {
         return [];
       }
+      // List<User> userList = [];
+      // name = jsonData['user_nicename'];
+      // if (name != '') {
+      //   print("why do i even have this line");
+      //   List<String> userData = [name];
+      //   return userData;
+      // } else {
+      //   print("i have a feeling");
+      //   // User is not authenticated
+      //   return [];
+      // }
     } else {
+      //add a 404 page.
       return ['Failed'];
     }
   } catch (error) {
